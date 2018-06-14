@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>chota</title>
+
+  <link rel="stylesheet" href="node_modules/chota/dist/chota.min.css">
+  <link rel="stylesheet" href="../common.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>Header(h1)</h1>
+    <p>CSS FrameWork が多すぎて比較するの大変ですね。基本的なHTMLのタグをいくつか使ってみて比較してみます。
+      <strong>ここが重要！！</strong>
+      <em>ここも重要</em>
+    </p>
+
+    <p>リンク(aタグ）は
+      <a href="#">こんな感じ。</a>
+    </p>
+    <h2>Header(h2)</h2>
+
+    <span>リストたち。（ここはspan）</span>
+
+    <ol>
+      <li>olの1つ目</li>
+      <li>olの2つ目</li>
+      <li>olの3つ目</li>
+      <li>olの4つ目</li>
+      <li>olの5つ目</li>
+    </ol>
+
+    <ul>
+      <li>ulの1つ目</li>
+      <li>ulの2つ目</li>
+      <li>ulの3つ目</li>
+      <li>ulの4つ目</li>
+      <li>ulの5つ目</li>
+    </ul>
+
+    <dl>
+      <dt>タイトル</dt>
+      <dd>データ</dd>
+      <dd>データ</dd>
+      <dt>タイトル</dt>
+      <dd>データ</dd>
+      <dd>データ</dd>
+    </dl>
+    <h3>Header(h3)</h3>
+
+    <blockquote>
+      「すごい良い言葉。すごい良い言葉。すごい良い言葉。すごい良い言葉。」
+    </blockquote>
+
+    <p>
+      <quote>Ctrl + C</quote> でだいたいコピーできます。
+    </p>
+
+    <hr>
+
+    <h2>Header(h2)</h2>
+
+    <h3>ボタン</h3>
+
+    <h4>.button</h4>
+    <a href="#" class="button">aタグ</a>
+    <button class="button">buttonタグ</button>
+
+    <h4>.button.primary</h4>
+    <a href="#" class="button primary">aタグ</a>
+    <button class="button primary">buttonタグ</button>
+
+    <h4>.button.secondary</h4>
+    <a href="#" class="button secondary">aタグ</a>
+    <button class="button secondary">buttonタグ</button>
+
+    <h4>.button.outline</h4>
+    <a href="#" class="button outline">aタグ</a>
+    <button class="button outline">buttonタグ</button>
+
+    <h4>.button.outline.primary</h4>
+    <a href="#" class="button outline primary">aタグ</a>
+    <button class="button outline primary">buttonタグ</button>
+
+    <h4>.button.outline.secondary</h4>
+    <a href="#" class="button outline secondary">aタグ</a>
+    <button class="button outline secondary">buttonタグ</button>
+
+    <h4>.button.clear</h4>
+    <a href="#" class="button clear">aタグ</a>
+    <button class="button clear">buttonタグ</button>
+
+    <h3>フォーム</h3>
+
+    <form action="">
+
+      <!-- fieldsetあり（labelのfor利用） -->
+      <fieldset>
+        <label for="name1">Name</label>
+        <input type="text" placeholder="歌野光男" id="name1">
+
+        <label for="age1">Age</label>
+        <select name="" id="age1">
+          <option value="">選択してください</option>
+          <option value="10代">10代</option>
+          <option value="20代">20代</option>
+          <option value="30代以上">30代以上</option>
+        </select>
+
+        <input class="button primary" type="submit" value="送信">
+      </fieldset>
+
+      <!-- fieldsetあり（labelの中に入力要素入れる） -->
+      <fieldset>
+        <label>
+          Name
+          <input type="text" placeholder="歌野光男" id="name2">
+        </label>
+
+        <label for="age2">
+          Age
+          <select name="">
+            <option value="">選択してください</option>
+            <option value="10代">10代</option>
+            <option value="20代">20代</option>
+            <option value="30代以上">30代以上</option>
+          </select>
+        </label>
+
+        <input class="button primary" type="submit" value="送信">
+      </fieldset>
+
+      <!-- fieldsetなし -->
+      <label for="name3">Name</label>
+      <input type="text" placeholder="歌野光男" id="name3">
+
+      <label for="age3">Age</label>
+      <select name="" id="age3">
+        <option value="">選択してください</option>
+        <option value="10代">10代</option>
+        <option value="20代">20代</option>
+        <option value="30代以上">30代以上</option>
+      </select>
+
+      <input class="button primary" type="submit" value="送信">
+    </form>
+
+    <h3>テーブル</h3>
+
+    <h4>thead, tbodyあり</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>うたの</td>
+          <td>34</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>さとう</td>
+          <td>21</td>
+          <td>75</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>thead, tbodyなし</h4>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>うたの</td>
+        <td>34</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>さとう</td>
+        <td>21</td>
+        <td>75</td>
+      </tr>
+    </table>
+
+    <h3>グリッド</h3>
+
+    <!-- .container, .row, .col が基本クラス -->
+    <div class="container">
+      <div class="row">
+        <div class="col">.col</div>
+        <div class="col">.col</div>
+        <div class="col">.col</div>
+        <div class="col">.col</div>
+      </div>
+
+      <div class="row">
+        <div class="col col-3">.col col-3</div>
+        <div class="col col-3"></div>
+        <div class="col col-6">.col col-6</div>
+      </div>
+
+      <div class="row">
+        <div class="col col-9">.col .col-9</div>
+        <div class="col col-3">.col .col-3</div>
+      </div>
+    </div>
+
+    <h3>コード</h3>
+
+    <pre><code>#app {
+  background-color: #ccc;
+}</code></pre>
+
+    <h3>ナビ</h3>
+
+    <!-- .nav + .nav-left, .nav-right -->
+    <nav class="nav">
+      <div class="nav-left">
+        Left
+      </div>
+      <div class="nav-right">
+        Right
+      </div>
+    </nav>
+
+    <h3>タブ</h3>
+
+    <div class="tabs">
+      <a href="#">ブログ</a>
+      <a href="#">プロフィール</a>
+      <a href="#" class="active">ポートフォリオ</a>
+    </div>
+
+    <div class="tabs is-full">
+      <a href="#">ブログ</a>
+      <a href="#">プロフィール</a>
+      <a href="#" class="active">ポートフォリオ</a>
+    </div>
+
+    <h3>カード</h3>
+
+    <div class="card">
+      <header>
+        <h4>カードのタイトル</h4>
+      </header>
+
+      <p>長い前振りからのすごそうな予感をさせる内容。そして、カードのすごい内容。いや、別にすごくない内容。やっぱりすごかった内容。</p>
+
+      <footer class="is-right">
+        <a href="#" class="button primary">確定</a>
+        <a href="#" class="button">キャンセル</a>
+      </footer>
+    </div>
+
+    <h3>タグ</h3>
+
+    <p>
+      <span class="tag is-small">span.tag.is-small</span>
+      <span class="tag">span.tag</span>
+      <span class="tag is-large">span.tag.is-large</span>
+    </p>
+  </div>
+</body>
+
+</html>
