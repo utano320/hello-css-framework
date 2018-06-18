@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Furtive</title>
+
+  <link rel="stylesheet" href="node_modules/furtive/css/furtive.min.css">
+  <link rel="stylesheet" href="../common.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>Header(h1)</h1>
+    <p>CSS FrameWork が多すぎて比較するの大変ですね。基本的なHTMLのタグをいくつか使ってみて比較してみます。
+      <strong>ここが重要！！</strong>
+      <em>ここも重要</em>
+    </p>
+
+    <p>リンク(aタグ）は
+      <a href="#">こんな感じ。</a>
+    </p>
+    <h2>Header(h2)</h2>
+
+    <span>リストたち。（ここはspan）</span>
+
+    <ol>
+      <li>olの1つ目</li>
+      <li>olの2つ目</li>
+      <li>olの3つ目</li>
+      <li>olの4つ目</li>
+      <li>olの5つ目</li>
+    </ol>
+
+    <ul>
+      <li>ulの1つ目</li>
+      <li>ulの2つ目</li>
+      <li>ulの3つ目</li>
+      <li>ulの4つ目</li>
+      <li>ulの5つ目</li>
+    </ul>
+
+    <dl>
+      <dt>タイトル</dt>
+      <dd>データ</dd>
+      <dd>データ</dd>
+      <dt>タイトル</dt>
+      <dd>データ</dd>
+      <dd>データ</dd>
+    </dl>
+    <h3>Header(h3)</h3>
+
+    <blockquote>
+      「すごい良い言葉。すごい良い言葉。すごい良い言葉。すごい良い言葉。」
+    </blockquote>
+
+    <p>
+      <quote>Ctrl + C</quote> でだいたいコピーできます。
+    </p>
+
+    <hr>
+
+    <h2>Header(h2)</h2>
+
+    <h3>ボタン</h3>
+
+    <h4>.btn</h4>
+    <a href="#" class="btn">aタグ</a>
+    <button class="btn">buttonタグ</button>
+
+    <h4>.btn--blue</h4>
+    <a href="#" class="btn--blue">aタグ</a>
+    <button class="btn--blue">buttonタグ</button>
+
+    <h4>.btn--green</h4>
+    <a href="#" class="btn--green">aタグ</a>
+    <button class="btn--green">buttonタグ</button>
+
+    <h4>.btn--red</h4>
+    <a href="#" class="btn--red">aタグ</a>
+    <button class="btn--red">buttonタグ</button>
+
+    <h4>.btn--gray</h4>
+    <a href="#" class="btn--gray">aタグ</a>
+    <button class="btn--gray">buttonタグ</button>
+
+    <h4>.btn.btn--s</h4>
+    <a href="#" class="btn--blue btn--s">aタグ</a>
+    <button class="btn--blue btn--s">buttonタグ</button>
+
+    <h3>フォーム</h3>
+
+    <form action="">
+
+      <!-- fieldsetあり（labelのfor利用） -->
+      <fieldset>
+        <label for="name1">Name</label>
+        <input type="text" placeholder="歌野光男" id="name1">
+
+        <label for="age1">Age</label>
+        <select name="" id="age1">
+          <option value="">選択してください</option>
+          <option value="10代">10代</option>
+          <option value="20代">20代</option>
+          <option value="30代以上">30代以上</option>
+        </select>
+
+        <input class="btn--blue" type="submit" value="送信">
+      </fieldset>
+
+      <!-- fieldsetあり（labelの中に入力要素入れる） -->
+      <fieldset>
+        <label>
+          Name
+          <input class="input" type="text" placeholder="歌野光男" id="name2">
+        </label>
+
+        <label for="age2">
+          Age
+          <select name="">
+            <option value="">選択してください</option>
+            <option value="10代">10代</option>
+            <option value="20代">20代</option>
+            <option value="30代以上">30代以上</option>
+          </select>
+        </label>
+
+        <input class="btn--blue" type="submit" value="送信">
+      </fieldset>
+
+      <!-- fieldsetなし -->
+      <label for="name3">Name</label>
+      <input type="text" placeholder="歌野光男" id="name3">
+
+      <label for="age3">Age</label>
+      <select name="" id="age3">
+        <option value="">選択してください</option>
+        <option value="10代">10代</option>
+        <option value="20代">20代</option>
+        <option value="30代以上">30代以上</option>
+      </select>
+
+      <input class="btn--blue" type="submit" value="送信">
+    </form>
+
+    <h3>テーブル</h3>
+
+    <h4>thead, tbodyあり</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>うたの</td>
+          <td>34</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>さとう</td>
+          <td>21</td>
+          <td>75</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>thead, tbodyなし</h4>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>うたの</td>
+        <td>34</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>さとう</td>
+        <td>21</td>
+        <td>75</td>
+      </tr>
+    </table>
+
+    <h3>グリッド</h3>
+
+    <!-- .grd, .grd-row, .grd-row-col が基本クラス -->
+    <div class="grd">
+      <div class="grd-row">
+        <div class="grd-row-col-2-6">2-6</div>
+        <div class="grd-row-col-2-6">2-6</div>
+        <div class="grd-row-col-2-6">2-6</div>
+      </div>
+
+      <div class="grd-row">
+        <div class="grd-row-col-1-6">1-6</div>
+        <div class="grd-row-col-1-6">1-6</div>
+        <div class="grd-row-col-4-6">4-6</div>
+      </div>
+
+      <div class="grd-row">
+        <div class="grd-row-col-4-6">4-6</div>
+        <div class="grd-row-col-2-6">2-6</div>
+      </div>
+    </div>
+
+    <h3>コード</h3>
+
+    <pre><code>#app {
+  background-color: #ccc;
+}</code></pre>
+
+  </div>
+</body>
+
+</html>
