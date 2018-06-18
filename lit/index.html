@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lit</title>
+
+  <link rel="stylesheet" href="node_modules/@ajusa/lit/dist/lit.css">
+  <link rel="stylesheet" href="../common.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>Header(h1)</h1>
+    <p>CSS FrameWork が多すぎて比較するの大変ですね。基本的なHTMLのタグをいくつか使ってみて比較してみます。
+      <strong>ここが重要！！</strong>
+      <em>ここも重要</em>
+    </p>
+
+    <p>リンク(aタグ）は
+      <a href="#">こんな感じ。</a>
+    </p>
+    <h2>Header(h2)</h2>
+
+    <span>リストたち。（ここはspan）</span>
+
+    <ol>
+      <li>olの1つ目</li>
+      <li>olの2つ目</li>
+      <li>olの3つ目</li>
+      <li>olの4つ目</li>
+      <li>olの5つ目</li>
+    </ol>
+
+    <ul>
+      <li>ulの1つ目</li>
+      <li>ulの2つ目</li>
+      <li>ulの3つ目</li>
+      <li>ulの4つ目</li>
+      <li>ulの5つ目</li>
+    </ul>
+
+    <dl>
+      <dt>タイトル</dt>
+      <dd>データ</dd>
+      <dd>データ</dd>
+      <dt>タイトル</dt>
+      <dd>データ</dd>
+      <dd>データ</dd>
+    </dl>
+    <h3>Header(h3)</h3>
+
+    <blockquote>
+      「すごい良い言葉。すごい良い言葉。すごい良い言葉。すごい良い言葉。」
+    </blockquote>
+
+    <p>
+      <quote>Ctrl + C</quote> でだいたいコピーできます。
+    </p>
+
+    <hr>
+
+    <h2>Header(h2)</h2>
+
+    <h3>ボタン</h3>
+
+    <h4>a.btn</h4>
+    <a href="#" class="btn">aタグ</a>
+
+    <h4>button.btn</h4>
+    <button class="btn">buttonタグ</button>
+
+    <h4>button.btn.primary</h4>
+    <button class="btn primary">buttonタグ</button>
+
+    <h3>フォーム</h3>
+
+    <form action="">
+
+      <!-- fieldsetあり（labelのfor利用） -->
+      <fieldset>
+        <div class="row">
+          <div class="6 col">
+            <label for="name1">Name</label>
+            <input class="card w-100" type="text" placeholder="歌野光男" id="name1">
+          </div>
+          <div class="6 col">
+            <label for="age1">Age</label>
+            <select class="card w-100" name="" id="age1">
+              <option value="">選択してください</option>
+              <option value="10代">10代</option>
+              <option value="20代">20代</option>
+              <option value="30代以上">30代以上</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <input class="btn primary" type="submit" value="送信">
+        </div>
+      </fieldset>
+
+      <!-- fieldsetあり（labelの中に入力要素入れる） -->
+      <fieldset>
+        <div class="row">
+          <div class="6 col">
+            <label>
+              Name
+              <input class="card w-100" type="text" placeholder="歌野光男" id="name2">
+            </label>
+          </div>
+          <div class="6 col">
+            <label for="age2">
+              Age
+              <select class="card w-100" name="">
+                <option value="">選択してください</option>
+                <option value="10代">10代</option>
+                <option value="20代">20代</option>
+                <option value="30代以上">30代以上</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <input class="btn primary" type="submit" value="送信">
+        </div>
+      </fieldset>
+
+      <!-- fieldsetなし -->
+      <div class="row">
+        <div class="6 col">
+          <label for="name1">Name</label>
+          <input class="card w-100" type="text" placeholder="歌野光男" id="name1">
+        </div>
+        <div class="6 col">
+          <label for="age1">Age</label>
+          <select class="card w-100" name="" id="age1">
+            <option value="">選択してください</option>
+            <option value="10代">10代</option>
+            <option value="20代">20代</option>
+            <option value="30代以上">30代以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <input class="btn primary" type="submit" value="送信">
+      </div>
+
+      <div class="row">
+        <div class="6 col">
+          <label>
+            Name
+            <input class="card w-100" type="text" placeholder="歌野光男" id="name2">
+          </label>
+        </div>
+        <div class="6 col">
+          <label for="age2">
+            Age
+            <select class="card w-100" name="">
+              <option value="">選択してください</option>
+              <option value="10代">10代</option>
+              <option value="20代">20代</option>
+              <option value="30代以上">30代以上</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <input class="btn primary" type="submit" value="送信">
+      </div>
+    </form>
+
+    <h3>テーブル</h3>
+
+    <h4>thead, tbodyあり</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>うたの</td>
+          <td>34</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>さとう</td>
+          <td>21</td>
+          <td>75</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>thead, tbodyなし</h4>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Score</th>
+      </tr>
+      <tr>
+        <td>うたの</td>
+        <td>34</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>さとう</td>
+        <td>21</td>
+        <td>75</td>
+      </tr>
+    </table>
+
+    <h3>グリッド</h3>
+
+    <!-- .row, .col が基本クラス -->
+    <div class="row">
+      <div class="3 col">3 col</div>
+      <div class="3 col">3 col</div>
+      <div class="3 col">3 col</div>
+      <div class="3 col">3 col</div>
+    </div>
+
+    <div class="row">
+      <div class="3 col">3 col</div>
+      <div class="3 col"></div>
+      <div class="6 col">6 col</div>
+    </div>
+
+    <div class="row">
+      <div class="9 col">9 col</div>
+      <div class="3 col">3 col</div>
+    </div>
+
+    <h3>コード</h3>
+
+    <pre><code>#app {
+  background-color: #ccc;
+}</code></pre>
+
+    <h3>ナビ</h3>
+
+    <!-- .row.card + col -->
+    <div class="row card">
+      <b class="col">Brand</b>
+      <div class="col">
+        <a href="#">News</a>
+      </div>
+      <div class="col">
+        <a href="#">About</a>
+      </div>
+      <div class="col">
+        <a href="#">Docs</a>
+      </div>
+      <div class="col">
+        <a href="#">Login</a>
+      </div>
+    </div>
+
+    <h3>カード</h3>
+
+    <div class="card">
+      <header>
+        <h4>カードのタイトル</h4>
+      </header>
+
+      <p>長い前振りからのすごそうな予感をさせる内容。そして、カードのすごい内容。いや、別にすごくない内容。やっぱりすごかった内容。</p>
+
+      <footer>
+        <a href="#" class="btn primary">確定</a>
+        <a href="#" class="btn">キャンセル</a>
+      </footer>
+    </div>
+
+    <h3>コンテナ</h3>
+
+    <div class="c">
+      コンテナがつくれます。コンテナがつくれます。コンテナがつくれます。コンテナがつくれます。
+    </div>
+
+  </div>
+</body>
+
+</html>
